@@ -106,10 +106,9 @@ header {
 }
 
 .container-top {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: auto;
     max-width: 1200px;
-    max-height: 1200px;
     margin: 10px auto;
     display: flex;
     padding: 150px;
@@ -200,4 +199,60 @@ span {
 
 .info ul li a:hover {
     text-decoration: underline;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .header-content {
+        margin-left: 5%;
+    }
+
+    .navbar {
+        margin-right: 5%;
+    }
+
+    .navbar ul li {
+        display: block;
+        font-size: 18px;
+    }
+
+    .container-top {
+        padding: 50px;
+    }
+
+    .box {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .description h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        margin-left: 2%;
+    }
+
+    .navbar {
+        margin-right: 2%;
+    }
+
+    .box {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .description h2 {
+        font-size: 28px;
+    }
+
+    .container-top {
+        padding: 30px;
+    }
 }
